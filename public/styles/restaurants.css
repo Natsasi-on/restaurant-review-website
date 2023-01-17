@@ -1,0 +1,60 @@
+main {
+    text-align: center;
+}
+
+.restaurants-box {
+    background-color: rgb(69, 55, 29);
+    color: rgb(255, 208, 121);
+    padding: 0.001rem 1.8rem;
+    width: 30rem;
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.restaurants-box p {
+    margin: 0.3rem 0;
+}
+
+#button {
+    text-align: right;
+}
+
+button {
+    background-color: rgb(255, 208, 121);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: rgb(69, 55, 29);
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(69, 55, 29);
+    color: orange;
+}
+
+#restaurant-title {
+    color: rgb(255, 158, 61);
+}
+
+#restaurant-description {
+    color: rgb(211, 146, 25);
+}
+
+/************************************************************/
+/*Responsive version for tablet or moblie*/
+
+@media (max-width: 870px) {
+
+    .restaurants-box {
+        background-color: rgb(69, 55, 29);
+        color: rgb(255, 208, 121);
+        padding: 0.001rem 1.8rem;
+        width: 80%;
+        margin: 0.5rem auto;
+        border-radius: 1rem;
+        text-align: left;
+    }
+}

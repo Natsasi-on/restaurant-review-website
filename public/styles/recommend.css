@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 0 auto;
+    background-color: rgb(255, 208, 121);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+label,
+input {
+    padding: 0.5rem 0;
+    font-family: inherit;
+    font-weight: bolder;
+    border: 0.1rem solid rgb(255, 208, 121);
+}
+
+textarea {
+    height: 8rem;
+    border: 0.1rem solid rgb(255, 208, 121);
+}
+
+button {
+    background-color: rgb(69, 55, 29);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgb(255, 208, 121);
+    font-family: inherit;
+    margin-top: 1rem;
+    width: 8rem;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(255, 208, 121);
+    color: rgb(255, 208, 121);
+}
+
+.button {
+    text-align: right;
+}
+
+/************************************************************/
+/*Responsive version for tablet or moblie*/
+
+@media (max-width: 870px) {
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgb(255, 208, 121);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+    }
+}
