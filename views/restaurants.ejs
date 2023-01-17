@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head') %>
+        <link rel="stylesheet" href="styles/restaurants.css">
+        <title>Eatwell</title>
+</head>
+
+<body>
+    <%- include('includes/header') %>
+        <main>
+            <h1>Recommended restaurants</h1>
+            <% if (numberOfRestaurants===0){ %>
+                <p>Unfortunately, we have no restaurants yet - maybe start recommending some?</p>
+                <%}else{ %>
+                    <p>Find your next favorite restaurants with help of our other users!</p>
+                    <h3>We found <%= numberOfRestaurants %> restaurants.</h3>
+                    <!-- ใช้get เพราะไม่ได้ store ข้อมูลที่ไหน เเค่ reload -->
+                    <form action="/restaurants" method="GET">
+                        <input type="hidden" value="<%= nextOrder %>" name="order">
+                        <button>Change Order</button>
+                    </form>
+                    <% for (const restaurant of restaurants) { %>
+                        <div class="restaurants-box">
+                            <h3 id="restaurant-title">
+                                <%= restaurant.name %>
+                            </h3>
+                            <p class="restaurant-text">
+                                <%= restaurant.address %>
+                            </p>
+                            <p class="restaurant-text">
+                                <%= restaurant.typeOfCusines %>
+                            </p>
+                            <p id="restaurant-description">
+                                <%= restaurant.reason %>
+                            </p>
+                            <p id="button"><button><a href="/restaurants/<%= restaurant.id %>">View Website</a></button>
+                            </p>
+                        </div>
+                        <% } %>
+                            <%} %>
+
+        </main>
+        <%- include('includes/footer') %>
+</body>
+
+</html>

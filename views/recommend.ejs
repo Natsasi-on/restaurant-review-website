@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head') %>
+        <link rel="stylesheet" href="styles/recommend.css">
+        <title>Eatwell</title>
+</head>
+
+<body>
+    <%- include('includes/header') %>
+        <main>
+            <h1>Share your favorite restaurant!</h1>
+            <form action="/recommend" method="post" id="form">
+                <label for="name">Restaurant name</label>
+                <input type="text" id="name" name="name">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+                <label for="typeOfCusine">Type of cuisine</label>
+                <input type="text" id="typeOfCusine" name="typeOfCusines">
+                <label for="website">Restaurant website</label>
+                <input type="text" id="website" name="website">
+                <label for="reason">Why do you recommend it?</label>
+                <textarea id="reason" name="reason"></textarea>
+                <p class="button"><button>Share Restaurant</button></p>
+            </form>
+        </main>
+        <%- include('includes/footer') %>
+</body>
+
+</html>
