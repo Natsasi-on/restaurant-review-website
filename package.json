@@ -4,7 +4,7 @@
   "description": "Getting started with Node and Express",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "index.ejs"
   },
   "author": "Natsasion",
   "license": "ISC",
