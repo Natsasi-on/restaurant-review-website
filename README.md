@@ -1,7 +1,7 @@
 # restaurant-review-website
 This is a dynamic restaurant recommendation website.
 - It is written with Node.js, JavaScript, and CSS.
-- Users can add new recommended restaurants through the form.
+- Users can add new recommended restaurants through the form. 
 - The added restaurant will show up on the recommended restaurants page with the total number of restaurants in the system.
 - Each individual restaurant page is created with dynamic URLs.
 - Users can sort restaurants when they click a button to switch between ascending and descending order.
