@@ -77,17 +77,3 @@ If you have any inquiries or feedback, please feel free to reach out to us at [n
 
 Step into the world of restaurant reviews with our Simple Restaurant Review Website!
 
-
-![index](https://user-images.githubusercontent.com/100752017/212830554-d441765a-5c2a-411b-8f21-823a43da79f6.jpg)
-This is the landing page; click "Browse restaurants" to see the restaurants added by users.
-Click "Share your restaurant" to add new restaurants to the system.
-#
-![restaurant-asc](https://user-images.githubusercontent.com/100752017/212832159-aacb8d40-7c3f-4352-9270-1d5d2885cd91.jpg)
-![restaurant-desc](https://user-images.githubusercontent.com/100752017/212832163-d3ed1205-1ce4-407a-a0b3-4637c3accd0c.jpg)
-These are the restaurants' pages. It will show all restaurants in the system. Click "change order" to switch between ascending and descending order.
-#
-![recommend](https://user-images.githubusercontent.com/100752017/212832351-168fa00b-1107-42d5-86e2-7f5c59dad74a.jpg)
-This is the recommend page where users can add new restaurants to the system.
-#
-![restaurant-detail](https://user-images.githubusercontent.com/100752017/212832271-8e14ed50-38b3-46c0-bf67-f91c1f609d9f.jpg)
-Each individual restaurant page is created with dynamic URLs.
