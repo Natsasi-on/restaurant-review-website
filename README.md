@@ -48,7 +48,7 @@ Explore the standout features of our website:
 
 Here are some screenshots to give you a glimpse of our website:
 
-![index](https://user-images.githubusercontent.com/100752017/212830554-d4417765c2a-411b-8f21-823a43da79f6.jpg)
+![index](https://user-images.githubusercontent.com/100752017/212830554-d441765a-5c2a-411b-8f21-823a43da79f6.jpg)
 * **Landing Page**: Click "Browse restaurants" to see the restaurants added by users. Click "Share your restaurant" to add new restaurants to the system.
 
 ![restaurant-asc](https://user-images.githubusercontent.com/100752017/212832159-aacb8d40-7c3f-4352-9270-1d5d2885cd91.jpg)
