@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="styles/shares.css">
+<link rel="stylesheet" href="styles/restaurants.css">
+<title>
+    <%= mytitle %>
+</title>
+<%- include('includes/header') %>
+    <main>
+        <h1>Recommended restaurants</h1>
+        <p>Find your next favorite restaurants with help of our other users!</p>
+        <p>
+            Number of restaurant found : <%= numberOfRestaurants %>
+        </p>
 
-<head>
-    <%- include('includes/head') %>
-        <link rel="stylesheet" href="styles/restaurants.css">
-        <title>Eatwell</title>
-</head>
+        <!-- <div class="restaurants-box">
+            <h3 id="restaurant-title">Restaurant Title</h3>
+            <p class="restaurant-text">county</p>
+            <p class="restaurant-text">address</p>
+            <p id="restaurant-description">description</p>
+            <p id="button"><button>View Website</button></p>
+        </div> -->
+        <form action="/restaurants" method="GET">
+            <input type="hidden" value="<%= nextOrder %>" name="order">
+            <button>Change Order</button>
+        </form>
 
-<body>
-    <%- include('includes/header') %>
-        <main>
-            <h1>Recommended restaurants</h1>
-            <% if (numberOfRestaurants===0){ %>
-                <p>Unfortunately, we have no restaurants yet - maybe start recommending some?</p>
-                <%}else{ %>
-                    <p>Find your next favorite restaurants with help of our other users!</p>
-                    <h3>We found <%= numberOfRestaurants %> restaurants.</h3>
-                    
-                    <form action="/restaurants" method="GET">
-                        <input type="hidden" value="<%= nextOrder %>" name="order">
-                        <button>Change Order</button>
-                    </form>
-                    <% for (const restaurant of restaurants) { %>
-                        <div class="restaurants-box">
-                            <h3 id="restaurant-title">
-                                <%= restaurant.name %>
-                            </h3>
-                            <p class="restaurant-text">
-                                <%= restaurant.address %>
-                            </p>
-                            <p class="restaurant-text">
-                                <%= restaurant.typeOfCusines %>
-                            </p>
-                            <p id="restaurant-description">
-                                <%= restaurant.reason %>
-                            </p>
-                            <p id="button"><button><a href="/restaurants/<%= restaurant.id %>">View Website</a></button>
-                            </p>
-                        </div>
-                        <% } %>
-                            <%} %>
+        <% for(const restaurant of storedRestaurants){ %>
+            <div class="restaurants-box">
+                <h3 id="restaurant-title">
+                    <%= restaurant.name %>
+                </h3>
+                <p class="restaurant-text">
+                    <%= restaurant.cusinetype %>
+                </p>
+                <p class="restaurant-text">
+                    <%= restaurant.address %>
+                </p>
+                <p id="restaurant-description">
+                    <%= restaurant.review %>
+                </p>
+                <p id="button"><button><a href="/restaurants/<%= restaurant.id %>">More detail...</a></button></p>
+            </div>
+            <br>
+            <%} %>
+    </main>
+    <%- include('includes/footer') %>
+        </body>
 
-        </main>
-        <%- include('includes/footer') %>
-</body>
-
-</html>
+        </html>
