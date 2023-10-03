@@ -5,6 +5,10 @@
     <a href="https://restaurant-review-1xf7.onrender.com/">[ Live Website ]</a>
 </p>
 
+## Project Overview
+
+The primary goal of this project is to provide a simple yet effective platform for sharing restaurant reviews and recommendations. Users can share their experiences, helping others discover new dining options and make informed choices.
+
 ## Technologies and Techniques Utilized
 
 This website leverages several key technologies and techniques to provide a smooth user experience:
@@ -23,9 +27,6 @@ This website leverages several key technologies and techniques to provide a smoo
 
 * ***Query Parameters** - Implemented query parameters to enable sorting of restaurant data.
 
-## Project Overview
-
-The primary goal of this project is to provide a simple yet effective platform for sharing restaurant reviews and recommendations. Users can share their experiences, helping others discover new dining options and make informed choices.
 
 ## Key Features
 
