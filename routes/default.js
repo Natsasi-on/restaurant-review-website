@@ -1,18 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/index', function (req, res) {
-    res.render('index');
-});
-
 router.get('/', function (req, res) {
-    res.render('index');
+    res.render('index', { mytitle: "EatWell", });
 });
 
 router.get('/about', function (req, res) {
-    res.render('about');
+    res.render('about', { mytitle: "About EatWell", });
 });
 
-//ส่งไปapp.js
-module.exports = router;
+router.get('/login', function (req, res) {
+    res.render('login', { mytitle: "Login", });
+});
 
+module.exports = router;
