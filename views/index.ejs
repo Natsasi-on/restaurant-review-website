@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="styles/shares.css">
+<link rel="stylesheet" href="styles/index.css">
+<title>
+    <%= mytitle %>
+</title>
+<%- include('includes/header') %>
 
-<head>
-    <%- include('includes/head') %>
-        <link rel="stylesheet" href="/styles/index.css">
-        <title>Eatwell</title>
-</head>
+    <main>
+        <h1 id="main-text-title">
+            Make the world a tastier place!
+        </h1>
+        <p>
+            Eatwell is a website for food enthusiasts that allows you to share and discover amazing restaurants from all
+            over the world!
+        </p>
+        <p id="text">You don't need to sign up or create any account - you can simpoly start sharing right away!</p>
+        <p>
+            <span class="link-box">
+                <a href="/restaurants">Browse Shared Restaurants</a>
+            </span>
+            <span class="link-box">
+                <a href="/recommend">Share Your Favorie Restaurant</a>
+            </span>
+        </p>
 
-<body>
-    <%- include('includes/header') %>
-        <main>
-            <h1 id="main-text-title">
-                Make the world a tastier place!
-            </h1>
-            <p>
-                Eatwell is a website for food enthusiasts that allows you to share and discover amazing restaurants from
-                all
-                over the world!
-            </p>
-            <p id="text">You don't need to sign up or create any account - you can simpoly start sharing right away!</p>
-            <p>
-                <span class="link-box">
-                    <a href="/restaurants">Browse Shared Restaurants</a>
-                </span>
-                <span class="link-box">
-                    <a href="/recommend">Share Your Favorie Restaurant</a>
-                </span>
-            </p>
-        </main>
-        <%- include('includes/footer') %>
-</body>
+    </main>
+    <%- include('includes/footer') %>
+        </body>
 
-</html>
+        </html>
