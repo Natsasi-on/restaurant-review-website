@@ -46,3 +46,7 @@ button:hover {
 .button {
     text-align: right;
 }
+
+main {
+    height: 100vh;
+}
