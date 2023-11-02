@@ -1,7 +1,9 @@
- main {
-     text-align: center;
- }
+main {
+    text-align: center;
+}
 
- #about-paragraph {
-     margin: 0 3rem;
- }
+p {
+    width: 65rem;
+    margin: auto;
+    text-align: left;
+}
