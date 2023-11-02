@@ -30,3 +30,11 @@ main {
     border-radius: 0.5rem;
     margin: 0.5rem;
 }
+
+/* responsive ******************************/
+@media only screen and (max-width: 600px) {
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
