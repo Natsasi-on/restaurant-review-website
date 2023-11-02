@@ -5,7 +5,7 @@ h1 {
 #form {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 80vw;
     margin: 0 auto;
     background-color: rgb(255, 208, 121);
     padding: 1.5rem;
@@ -45,20 +45,4 @@ button:hover {
 
 .button {
     text-align: right;
-}
-
-/************************************************************/
-/*Responsive version for tablet or moblie*/
-
-@media (max-width: 870px) {
-
-    #form {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        background-color: rgb(255, 208, 121);
-        padding: 1.5rem;
-        border-radius: 0.5rem;
-    }
 }
