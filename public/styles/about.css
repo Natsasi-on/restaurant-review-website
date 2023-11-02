@@ -1,9 +1,9 @@
 main {
     text-align: center;
+    margin: 2vh;
+    height: 100vh;
 }
 
-p {
-    width: 65rem;
-    margin: auto;
-    text-align: left;
+h5 {
+    line-height: 20px;
 }
