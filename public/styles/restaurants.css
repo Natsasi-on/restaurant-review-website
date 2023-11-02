@@ -5,7 +5,7 @@ main {
 .restaurants-box {
     background-color: rgb(69, 55, 29);
     color: rgb(255, 208, 121);
-    padding: 0.001rem 1.8rem;
+    padding: 1rem 1.8rem;
     width: 80vw;
     margin: 0 auto;
     border-radius: 1rem;
@@ -22,6 +22,11 @@ button {
     border-radius: 0.5rem;
     border-color: rgb(69, 55, 29);
     font-family: inherit;
+    margin: 10px;
+}
+
+form button {
+    margin: 20px auto;
 }
 
 button:hover {
