@@ -6,14 +6,10 @@ main {
     background-color: rgb(69, 55, 29);
     color: rgb(255, 208, 121);
     padding: 0.001rem 1.8rem;
-    width: 30rem;
-    margin: 0.5rem auto;
+    width: 80vw;
+    margin: 0 auto;
     border-radius: 1rem;
     text-align: left;
-}
-
-.restaurants-box p {
-    margin: 0.3rem 0;
 }
 
 #button {
@@ -40,21 +36,5 @@ button:hover {
 }
 
 #restaurant-description {
-    color: rgb(211, 146, 25);
-}
-
-/************************************************************/
-/*Responsive version for tablet or moblie*/
-
-@media (max-width: 870px) {
-
-    .restaurants-box {
-        background-color: rgb(69, 55, 29);
-        color: rgb(255, 208, 121);
-        padding: 0.001rem 1.8rem;
-        width: 80%;
-        margin: 0.5rem auto;
-        border-radius: 1rem;
-        text-align: left;
-    }
+    color: rgb(165, 110, 9);
 }
