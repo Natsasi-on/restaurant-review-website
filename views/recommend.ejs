@@ -9,15 +9,15 @@
         <h1>Share your favorite restaurant!</h1>
         <form action="/recommend" method="post" id="form">
             <label for="name">Restaurant name</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <label for="address">Address</label>
-            <input type="text" id="address" name="address">
+            <input type="text" id="address" name="address" required>
             <label for="typeOfCusine">Type of cuisine</label>
-            <input type="text" id="typeOfCusine" name="cusinetype">
+            <input type="text" id="typeOfCusine" name="cusinetype" required>
             <label for="website">Restaurant website</label>
-            <input type="text" id="website" name="website">
+            <input type="text" id="website" name="website" required>
             <label for="reason">Why do you recommend it?</label>
-            <textarea id="reason" name="review"></textarea>
+            <textarea id="reason" name="review" required></textarea>
             <p class="button"><button>Share Restaurant</button></p>
 
         </form>
